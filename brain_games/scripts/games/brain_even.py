@@ -16,7 +16,7 @@ def main():
         else:
             correctly_answer = "no"
 
-        engine.cheking_answer(answer, correctly_answer, name)
+        engine.cheking_answer(answer.lower(), correctly_answer, name)
 
         i += 1
         if i == 3:
