@@ -10,7 +10,7 @@ def welcome_user():
 
 
 def question_for_user(string_for_question):
-    print("Question! {}".format(string_for_question))
+    print("Question: {}".format(string_for_question))
     answer = prompt.string("Your answer: ")
     return answer
 
