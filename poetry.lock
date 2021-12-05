@@ -10,7 +10,7 @@ python-versions = "*"
 name = "flake8"
 version = "4.0.1"
 description = "the modular source code checker: pep8 pyflakes and co"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -23,7 +23,7 @@ pyflakes = ">=2.4.0,<2.5.0"
 name = "mccabe"
 version = "0.6.1"
 description = "McCabe checker, plugin for flake8"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -39,7 +39,7 @@ python-versions = ">=3.3"
 name = "pycodestyle"
 version = "2.8.0"
 description = "Python style guide checker"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -47,14 +47,14 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pyflakes"
 version = "2.4.0"
 description = "passive checker of Python programs"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "31739b98f84d07b51bc3699ab5f9a22d5c3e2987460a0136dafd6e7cf7a60dae"
+content-hash = "3ea23f04e686dcf1af8c1613ed3363636dc02828bcd61db7c03d5c9d5d745c95"
 
 [metadata.files]
 asciinema = [
