@@ -1,30 +1,29 @@
 import prompt
 import sys
+from brain_games.scripts.games import brain_calc, brain_even, brain_gcd,\
+    brain_progression, brain_prime
 
 
-def engine_for_games(greeting, create_question):
+def engine_for_games(greeting, func_games):
 
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
-    print("Hello, {}!".format(name)) 
+    print("Hello, {}!".format(name))
     print(greeting)
-    
-    while i < 3:
-        question, correct_ans = create_question()
+
+    for _ in range(3):
+        question, corct_ans = eval(func_games)
         print("Question: {}".format(question))
-        answer = prompt.string("Your answer: ")
-        if answer == correct_ans:
-            i += 1
+        ans = prompt.string("Your answer: ")
+
+        if ans == corct_ans:
             print("Correct!")
-        elif answer != correct_ans:
-            string_wrong_ans = "'{}' is wrong answer ;(. Correct answer was '{}'".format(answer, correct_ans)
+        elif ans != corct_ans:
+            txt = "'{}' is wrong answer ;(."
+            txt2 = " Correct answer was '{}'"
+            print(txt.format(ans) + txt2.format(corct_ans))
             print("Let's try again, {}!".format(name))
             sys.exit(0)
-
-        #elif answer != correct_val:
-         #   print(string_wrong_ans.format(answer, correct_val))
-        
-
 
     print("Congratulations, {}!".format(name))
 

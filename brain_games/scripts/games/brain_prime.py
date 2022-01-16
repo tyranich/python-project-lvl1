@@ -9,25 +9,28 @@ def chek_on_prime(num):
         if (num % _ == 0):
             i += 1
     if (i <= 0):
-        return "yes"
+        return True
     else:
-        return "no"
+        return False
+
+
+greeting = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
+
+
+def brain_primer():
+
+    num = random.randint(1, 100)
+    if chek_on_prime(num):
+        correctly_answer = "yes"
+    else:
+        correctly_answer = "no"
+
+    return num, correctly_answer
 
 
 def main():
-    name = engine.welcome_user()
-    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
-    i = 0
-    while True:
-        num = random.randint(1, 100)
-        string_for_question = str(num)
-        answer = engine.question_for_user(string_for_question)
-        correctly_answer = chek_on_prime(num)
-        engine.cheking_answer(answer, correctly_answer, name)
-        i += 1
-        if i == 3:
-            engine.farewell(name)
-            break
+
+    engine.engine_for_games(greeting, "brain_prime.brain_primer()")
 
 
 if __name__ == "__main__":

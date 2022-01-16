@@ -2,26 +2,29 @@
 import random
 from brain_games.scripts.for_engine import engine
 
+greeting = "Answer 'yes' if the number is even, otherwise answer 'no'."
+
+
+def parity_chek(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+
+
+def brain_parity():
+    correctly_answer = ''
+    num = random.randint(1, 100)
+    if parity_chek(num):
+        correctly_answer = "yes"
+    else:
+        correctly_answer = "no"
+
+    return num, correctly_answer
+
 
 def main():
-    name = engine.welcome_user()
-    print("Answer 'yes' if the number is even, otherwise answer 'no'.")
-    i = 0
-    correctly_answer = ''
-    while True:
-        num = random.randint(1, 100)
-        answer = engine.question_for_user(str(num))
-        if num % 2 == 0:
-            correctly_answer = "yes"
-        else:
-            correctly_answer = "no"
-
-        engine.cheking_answer(answer.lower(), correctly_answer, name)
-
-        i += 1
-        if i == 3:
-            engine.farewell(name)
-            break
+    engine.engine_for_games(greeting, "brain_even.brain_parity()")
 
 
 if __name__ == '__main__':
