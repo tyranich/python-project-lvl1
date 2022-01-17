@@ -24,7 +24,7 @@ def brain_parity():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_even.brain_parity()")
+    engine.engine_for_games(greeting, "brain_even")
 
 
 if __name__ == '__main__':

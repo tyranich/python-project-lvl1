@@ -23,7 +23,7 @@ def search_gcd():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_gcd.search_gcd()")
+    engine.engine_for_games(greeting, "brain_gcd")
 
 
 if __name__ == "__main__":

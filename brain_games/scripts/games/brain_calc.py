@@ -8,8 +8,8 @@ greeting = "What is the result of the expression?"
 def brain_calculation():
 
     sings_collection = ("-", "+", "*")
-    num = random.randint(1, 100)
-    second_num = random.randint(1, 100)
+    num = random.randint(1, 10)
+    second_num = random.randint(1, 10)
     random_sing = random.choice(sings_collection)
     string_for_question = "{} {} {}".format(num, random_sing, second_num)
     correctly_answer = int(eval(string_for_question))
@@ -17,7 +17,7 @@ def brain_calculation():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_calc.brain_calculation()")
+    engine.engine_for_games(greeting, "brain_calc")
 
 
 if __name__ == "__main__":

@@ -43,7 +43,7 @@ def brain_progress():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_progression.brain_progress()")
+    engine.engine_for_games(greeting, "brain_progression")
 
 
 if __name__ == "__main__":

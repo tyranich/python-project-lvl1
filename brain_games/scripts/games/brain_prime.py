@@ -30,7 +30,7 @@ def brain_primer():
 
 def main():
 
-    engine.engine_for_games(greeting, "brain_prime.brain_primer()")
+    engine.engine_for_games(greeting, "brain_prime")
 
 
 if __name__ == "__main__":
