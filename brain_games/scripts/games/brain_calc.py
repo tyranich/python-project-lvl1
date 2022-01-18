@@ -2,7 +2,7 @@
 from brain_games.scripts.for_engine import engine
 import random
 
-greeting = "What is the result of the expression?"
+GREETING = "What is the result of the expression?"
 
 
 def brain_calculation():
@@ -17,7 +17,7 @@ def brain_calculation():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_calc")
+    engine.engine_for_games(GREETING, "brain_calc")
 
 
 if __name__ == "__main__":

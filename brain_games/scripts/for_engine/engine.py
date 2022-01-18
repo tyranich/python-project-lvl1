@@ -28,9 +28,9 @@ def engine_for_games(greeting, func_games):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print("Hello, {}!".format(name))
-    sleep(0.5)
+    sleep(0.2)
     print(greeting)
-    sleep(0.5)
+    sleep(0.1)
     for _ in range(3):
         question, corct_ans = choise_games_func(func_games)
         print("Question: {}".format(question))

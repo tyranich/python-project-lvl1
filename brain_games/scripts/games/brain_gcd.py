@@ -2,7 +2,7 @@
 from brain_games.scripts.for_engine import engine
 import random
 
-greeting = "Find the greatest common divisor of given numbers."
+GREETING = "Find the greatest common divisor of given numbers."
 
 
 def gcd_rem_division(num1, num2):
@@ -23,7 +23,7 @@ def search_gcd():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_gcd")
+    engine.engine_for_games(GREETING, "brain_gcd")
 
 
 if __name__ == "__main__":

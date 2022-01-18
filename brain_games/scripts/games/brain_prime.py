@@ -14,7 +14,7 @@ def chek_on_prime(num):
         return False
 
 
-greeting = "Answer 'yes' if given number is prime. Otherwise answer 'no'."
+GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def brain_primer():
@@ -30,7 +30,7 @@ def brain_primer():
 
 def main():
 
-    engine.engine_for_games(greeting, "brain_prime")
+    engine.engine_for_games(GREETING, "brain_prime")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@
 import random
 from brain_games.scripts.for_engine import engine
 
-greeting = "Answer 'yes' if the number is even, otherwise answer 'no'."
+GREETING = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def parity_chek(num):
@@ -24,7 +24,7 @@ def brain_parity():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_even")
+    engine.engine_for_games(GREETING, "brain_even")
 
 
 if __name__ == '__main__':

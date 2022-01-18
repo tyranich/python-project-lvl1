@@ -18,7 +18,7 @@ def create_ret_str(str_prog, cut_str):
     return return_string
 
 
-greeting = "What number is missing in the progression?"
+GREETING = "What number is missing in the progression?"
 
 
 def brain_progress():
@@ -43,7 +43,7 @@ def brain_progress():
 
 
 def main():
-    engine.engine_for_games(greeting, "brain_progression")
+    engine.engine_for_games(GREETING, "brain_progression")
 
 
 if __name__ == "__main__":
