@@ -33,7 +33,7 @@ def engine_for_games(greeting, func_games):
     sleep(0.1)
     for _ in range(3):
         question, corct_ans = choise_games_func(func_games)
-        print("Question: {}".format(question))
+        print("Question: {} ".format(question))
         ans = prompt.string("Your answer: ")
 
         if ans == corct_ans:
