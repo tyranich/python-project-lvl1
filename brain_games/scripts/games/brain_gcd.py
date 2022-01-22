@@ -1,6 +1,7 @@
 #!usr/bin/env/ python3
 from brain_games.scripts.for_engine import engine
 import random
+from brain_games.scripts.games import brain_gcd
 
 GREETING = "Find the greatest common divisor of given numbers."
 
@@ -14,7 +15,7 @@ def gcd_rem_division(num1, num2):
     return num1 or num2
 
 
-def search_gcd():
+def game():
     first_num = random.randint(1, 100)
     second_num = random.randint(1, 100)
     string_for_question = "{} {}".format(first_num, second_num)
@@ -23,7 +24,7 @@ def search_gcd():
 
 
 def main():
-    engine.engine_for_games(GREETING, "brain_gcd")
+    engine.engine_for_games(GREETING, brain_gcd)
 
 
 if __name__ == "__main__":

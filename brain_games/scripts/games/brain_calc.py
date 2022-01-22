@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from brain_games.scripts.for_engine import engine
 import random
+from brain_games.scripts.games import brain_calc
 
 GREETING = "What is the result of the expression?"
 
 
-def brain_calculation():
+def game():
 
     sings_collection = ("-", "+", "*")
     num = random.randint(1, 10)
@@ -17,7 +18,7 @@ def brain_calculation():
 
 
 def main():
-    engine.engine_for_games(GREETING, "brain_calc")
+    engine.engine_for_games(GREETING, brain_calc)
 
 
 if __name__ == "__main__":

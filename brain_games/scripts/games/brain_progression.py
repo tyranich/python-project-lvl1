@@ -1,6 +1,7 @@
 #!/ust/bin/env python
 import random
 from brain_games.scripts.for_engine import engine
+from brain_games.scripts.games import brain_progression
 
 
 def create_ret_str(str_prog, cut_str):
@@ -21,7 +22,7 @@ def create_ret_str(str_prog, cut_str):
 GREETING = "What number is missing in the progression?"
 
 
-def brain_progress():
+def game():
 
     num_start_progressive = random.randint(1, 50)
     magnifer = random.randint(1, 10)
@@ -43,7 +44,7 @@ def brain_progress():
 
 
 def main():
-    engine.engine_for_games(GREETING, "brain_progression")
+    engine.engine_for_games(GREETING, brain_progression)
 
 
 if __name__ == "__main__":
