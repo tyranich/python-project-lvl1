@@ -26,7 +26,7 @@ def game():
     else:
         correctly_answer = "no"
 
-    return num, correctly_answer
+    return str(num), correctly_answer
 
 
 def main():
