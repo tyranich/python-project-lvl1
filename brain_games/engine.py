@@ -2,12 +2,12 @@ import prompt
 import sys
 
 
-def engine_for_games(greeting, modul_games):
+def start_game(modul_games):
 
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print("Hello, {}!".format(name))
-    print(greeting)
+    print(modul_games.GREETING)
     for _ in range(3):
         question, corct_ans = modul_games.game()
         print("Question: {}".format(question))
