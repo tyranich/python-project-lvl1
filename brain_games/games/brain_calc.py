@@ -2,7 +2,9 @@
 import random
 import sys
 
+
 GREETING = "What is the result of the expression?"
+
 
 def calc(num1, num2, operation):
 
@@ -10,7 +12,7 @@ def calc(num1, num2, operation):
         return num1 + num2
     elif operation == "-":
         return num1 - num2
-    elif operation == "*"
+    elif operation == "*":
         return num1 * num2
     else:
         print("unknown operation {}".format(operation))

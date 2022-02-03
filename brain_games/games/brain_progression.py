@@ -5,38 +5,27 @@ import random
 GREETING = "What number is missing in the progression?"
 
 
-def create_ret_str(str_prog, cut_str):
+def create_ret_str(first, diff, length):
 
-    return_string = ""
-
-    for _ in range(len(str_prog)):
-        if _ == cut_str + 2 and str_prog[cut_str + 2] != ' ':
-            return_string = return_string + "."
-        elif _ != cut_str and _ != cut_str + 1:
-            return_string = return_string + str_prog[_]
-        else:
-            return_string = return_string + "."
-
-    return return_string
+    str_list = []
+    for _ in range(length):
+        str_list.append(str(first))
+        first += diff
+    return str_list
 
 
 def generate_round():
 
-    num_start_progressive = random.randint(1, 50)
-    magnifer = random.randint(1, 10)
+    first_num = random.randint(1, 50)
+    diff_num = random.randint(1, 10)
     len_progressie = random.randint(5, 10)
-    string_progres = ""
-    list_progres = []
+    ind_cut_elmt = random.randint(0, len_progressie - 1)
+    list_str = create_ret_str(first_num, diff_num, len_progressie)
+    correctly_answer = list_str[ind_cut_elmt]
+    if int(list_str[ind_cut_elmt]) / 10 >= 10:
+        list_str[ind_cut_elmt] = "..."
+    else:
+        list_str[ind_cut_elmt] = ".."
 
-    for _ in range(len_progressie):
-        num_start_progressive = num_start_progressive + magnifer
-        list_progres.append(num_start_progressive)
-        string_progres = string_progres + str(num_start_progressive) + " "
-
-    cut_element = random.choice(list_progres)
-    cut_string = string_progres.find(str(cut_element))
-
-    correctly_answer = cut_element
-    return_str = create_ret_str(string_progres, cut_string)
+    return_str = " ".join(list_str)
     return return_str, str(correctly_answer)
-

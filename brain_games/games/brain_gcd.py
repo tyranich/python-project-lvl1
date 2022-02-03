@@ -19,4 +19,3 @@ def generate_round():
     string_for_question = "{} {}".format(first_num, second_num)
     correctly_answer = gcd(first_num, second_num)
     return string_for_question, str(correctly_answer)
-

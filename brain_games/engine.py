@@ -9,7 +9,7 @@ def start_game(modul_games):
     print("Hello, {}!".format(name))
     print(modul_games.GREETING)
     for _ in range(3):
-        question, corct_ans = modul_games.game()
+        question, corct_ans = modul_games.generate_round()
         print("Question: {}".format(question))
         ans = prompt.string("Your answer: ")
 

@@ -13,7 +13,7 @@ def is_prime(num):
         return True
 
 
-def game():
+def generate_round():
 
     num = random.randint(1, 100)
     if is_prime(num):
@@ -22,4 +22,3 @@ def game():
         correctly_answer = "no"
 
     return str(num), correctly_answer
-

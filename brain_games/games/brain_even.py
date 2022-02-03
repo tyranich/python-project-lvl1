@@ -20,4 +20,3 @@ def generate_round():
         correctly_answer = "no"
 
     return str(num), correctly_answer
-
