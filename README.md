@@ -1,4 +1,4 @@
-manual:
+manual for package:
 This package contains games for the development of intelligence and logic. In these games you have to calculate the sum of numbers, nodes, 
 search for the missing number of progression, check the number for parity and simplicity. In each game, you are given 3 rounds for the correct answer, 
 if you answered correctly 3 times, then you won, and if you made a mistake at least once, the game will end.
