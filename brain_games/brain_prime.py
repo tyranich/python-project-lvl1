@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import random
 
 GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -9,8 +8,8 @@ def is_prime(num):
     for _ in range(2, num // 2 + 1):
         if (num % _ == 0):
             return False
-    if (i <= 0):
-        return True
+    
+    return True
 
 
 def generate_round():
