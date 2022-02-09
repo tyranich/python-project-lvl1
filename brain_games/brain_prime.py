@@ -1,22 +1,12 @@
-import random
-
-GREETING = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
-
-def is_prime(num):
-
-    for _ in range(2, num // 2 + 1):
-        if (num % _ == 0):
-            return False
-    return True
+#!/usr/bin/env python3
+from brain_games import engine
+from brain_games.games import brain_prime
 
 
-def generate_round():
+def main():
 
-    num = random.randint(1, 100)
-    if is_prime(num):
-        correctly_answer = "yes"
-    else:
-        correctly_answer = "no"
+    engine.start_game(brain_prime)
 
-    return str(num), correctly_answer
+
+if __name__ == "__main__":
+    main()

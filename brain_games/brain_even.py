@@ -1,21 +1,11 @@
-import random
-
-GREETING = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
-def parity_chek(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+#!/usr/bin/env python3
+from brain_games import engine
+from brain_games.games import brain_even
 
 
-def generate_round():
-    correctly_answer = ''
-    num = random.randint(1, 100)
-    if parity_chek(num):
-        correctly_answer = "yes"
-    else:
-        correctly_answer = "no"
+def main():
+    engine.start_game(brain_even)
 
-    return str(num), correctly_answer
+
+if __name__ == '__main__':
+    main()
